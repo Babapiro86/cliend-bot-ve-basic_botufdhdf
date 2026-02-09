@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ankara Hava Durumu</h1>
+    <p id="hava">Yükleniyor...</p>
+    <script>
+        fetch('https://api.open-meteo.com/v1/forecast?latitude=39.93&longitude=32.85&current=temperature_2m')
+            .then(r => r.json()).then(d => {
+                document.getElementById('hava').textContent = d.current.temperature_2m + ' °C';
+            });
+    </script>
+</body>
+</html>
