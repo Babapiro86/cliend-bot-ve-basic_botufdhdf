@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Teknoloji Bağımlılığı</title>
+</head>
+<body>
+
+<h1>Teknoloji Bağımlılığı</h1>
+<p>
+Teknoloji bağımlılığı, bireylerin dijital cihazları aşırı kullanmasıdır.
+Dışarı çıkmak ve yürüyüş yapmak bu bağımlılığı azaltabilir.
+</p>
+
+<h2>Bugünkü Hava Durumu</h2>
+
+<iframe 
+    src="<iframe src="https://weatherwidget.io/w/" width="200" height="300"></iframe>
+"
+    width="200"
+    height="300">
+</iframe>
+
+</body>
+</html>
